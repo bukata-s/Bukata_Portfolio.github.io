@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<a href="my projects.html">BACK</a>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 10px;
+  background: violet;
+font-family: comic sans MS;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: violet;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: purple;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: violet;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 50%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 50%;
+  background-color: violet;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+/* Style the footer */
+.footer {
+  background-color: purple;
+  padding: 0px;
+  text-align: left;
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>My Skills</h1>
+  <p>The following are the programming languages, frameworks, and tools I'm proficient in.</p>
+</div>
+
+<div class="topnav">
+  <a href="index.html">Home</a>
+<a href="about me.html">About Me</a>
+<a href="my projects.html">My Projects</a>
+<a href="my skills.html">My Skills</a>
+<a href="my achievements.html">My Achievements</a>
+<a href="contact me.html">Contact Me</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Pascal</h2>
+<img src="https://logos-download.com/wp-content/uploads/2018/04/Pascal_logo_black.png" width="350" height"50">
+    </div>
+
+    <div class="card">
+      <h2>C++</h2>
+<img src="https://www.ujudebug.com/wp-content/uploads/2021/03/c-plus-plus-Logo-ujudebug-e1617611636592.png" width="350" height"50">
+    </div>
+  </div>
+
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>Hypertext Markup Language(Html)</h2>
+<img src="https://th.bing.com/th/id/OIP.4dQkxLm-cAndV-9OfVjjQwAAAA?pid=ImgDet&rs=1" width="350" height"50">
+    </div>
+
+    <div class="card">
+      <h2>Cascading Style Sheets(CSS)</h2>
+<img src="https://th.bing.com/th/id/R.7cab4403a552b823e1d270b2d954e765?rik=8hPGgfe2mcqWOg&riu=http%3a%2f%2f4.bp.blogspot.com%2f-bJzLLxRKU-8%2fUV8-wthecDI%2fAAAAAAAAALc%2f76buPolnlIo%2fs1600%2fLogo%2bCSS3.JPG&ehk=wWjw67eTyNgJsxHhMb3ts4fJ09NSuCEEM7m2KNX3Bvo%3d&risl=&pid=ImgRaw&r=0" width="350" height"50">
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
+
+<a href="my achievements.html">NEXT PAGE</a>
+
+<div class="footer">
+  <p>© 2023 Bukata's Portfolio. All rights reserved</p>
+</div>
+
+
