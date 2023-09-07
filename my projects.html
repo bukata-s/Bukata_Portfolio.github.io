@@ -85,29 +85,34 @@ div.desc {
   box-sizing: border-box;
 }
 
-.responsive {
-  padding: 0 6px;
+/* Create three unequal columns that floats next to each other */
+.column {
   float: left;
-  width: 24.99999%;
+  padding: 10px;
 }
 
-@media only screen and (max-width: 700px) {
-  .responsive {
-    width: 49.99999%;
-    margin: 6px 0;
-  }
+/* Left and right column */
+.column.side {
+  width: 50%;
 }
 
-@media only screen and (max-width: 500px) {
-  .responsive {
-    width: 100%;
-  }
+/* Middle column */
+.column.middle {
+  width: 50%;
 }
 
-.clearfix:after {
+/* Clear floats after the columns */
+.row::after {
   content: "";
   display: table;
   clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
 }
 
 /* Style the footer */
@@ -118,7 +123,8 @@ div.desc {
 
 </style>
 </head>
-<body>
+</body>
+
 
 <div class="header">
   <h1>My Projects</h1>
@@ -136,23 +142,19 @@ div.desc {
 <a href="contact me.html">Contact Me</a>
 </div>
 
-
-<div class="responsive">
-  <div class="gallery">
-<a target="_blank" href="https://2.bp.blogspot.com/-Ubc7Fcgltds/UkBSA_EnkmI/AAAAAAAAACo/zmbC290VYiQ/s1600/find-Armstrong-number-in-cpp-example-code.GIF">
-      <img src="https://2.bp.blogspot.com/-Ubc7Fcgltds/UkBSA_EnkmI/AAAAAAAAACo/zmbC290VYiQ/s1600/find-Armstrong-number-in-cpp-example-code.GIF" width="600" height="400">
-</a>
-    <div class="desc">Program to calculate the end time of a particular event </div>
+<div class="column middle">
+    <h2>C++</h2>
+<img src="https://th.bing.com/th/id/R.a323d672b8e6ed2ceb65da1b5d5cf761?rik=mhB5RykpX%2f1zHQ&pid=ImgRaw&r=0" width="450" height="200">
+<p>Program to show syntax of the while loop</p>
   </div>
-
-
-<div class="responsive">
-  <div class="gallery">
-<a target="_blank" href="https://th.bing.com/th/id/R.a323d672b8e6ed2ceb65da1b5d5cf761?rik=mhB5RykpX%2f1zHQ&pid=ImgRaw&r=0">
-      <img src="https://th.bing.com/th/id/R.a323d672b8e6ed2ceb65da1b5d5cf761?rik=mhB5RykpX%2f1zHQ&pid=ImgRaw&r=0" width="600" height="400">
-</a>
-    <div class="desc">Program to display the first and last character of two words</div>
+  
+  <div class="column side">
+    <h2>C++</h2>
+<img src="https://2.bp.blogspot.com/-Ubc7Fcgltds/UkBSA_EnkmI/AAAAAAAAACo/zmbC290VYiQ/s1600/find-Armstrong-number-in-cpp-example-code.GIF" width="450" height="300">
+<p>Program to display if number input is an armstrong number or not an armsrtong number</P>
   </div>
+</div>
+
 
 <a href="my skills.html">NEXT PAGE</a>
 
